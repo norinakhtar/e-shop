@@ -1,0 +1,77 @@
+Arguments: 
+  /Users/norinaakhtar/.nvm/versions/node/v12.22.12/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js
+
+PATH: 
+  /Users/norinaakhtar/.rvm/gems/ruby-2.7.5/bin:/Users/norinaakhtar/.rvm/gems/ruby-2.7.5@global/bin:/Users/norinaakhtar/.rvm/rubies/ruby-2.7.5/bin:/Users/norinaakhtar/.nvm/versions/node/v12.22.12/bin:/opt/local/bin:/opt/local/sbin:/Applications/Sublime Text.app/Contents/SharedSupport/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/norinaakhtar/.rvm/gems/ruby-2.7.5/bin:/Users/norinaakhtar/.rvm/gems/ruby-2.7.5@global/bin:/Users/norinaakhtar/.rvm/rubies/ruby-2.7.5/bin:/Users/norinaakhtar/opt/anaconda3/bin:/Users/norinaakhtar/opt/anaconda3/condabin:/Users/norinaakhtar/.nvm/versions/node/v12.22.12/bin:/opt/local/bin:/opt/local/sbin:/Applications/Sublime Text.app/Contents/SharedSupport/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/norinaakhtar/hadoop-3.3.4/sbin:/Users/norinaakhtar/hadoop-3.3.4/bin:/Users/norinaakhtar/.rvm/bin:/Users/norinaakhtar/hadoop-3.3.4/sbin:/Users/norinaakhtar/hadoop-3.3.4/bin:/Users/norinaakhtar/.rvm/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  12.22.12
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, scandir '/Users/norinaakhtar/Desktop/e-commerce/project_e_commerce/node_modules/core-js-pure'
+
+npm manifest: 
+  {
+    "name": "eccomerce",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@chec/commerce.js": "^2.8.0",
+      "@material-ui/core": "^4.11.0",
+      "@material-ui/icons": "^4.9.1",
+      "@material-ui/lab": "^4.0.0-alpha.56",
+      "@stripe/react-stripe-js": "^1.1.2",
+      "@stripe/stripe-js": "^1.11.0",
+      "@testing-library/jest-dom": "^4.2.4",
+      "@testing-library/react": "^9.3.2",
+      "@testing-library/user-event": "^7.1.2",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1",
+      "react-hook-form": "^6.11.5",
+      "react-router": "^5.2.0",
+      "react-router-dom": "^5.2.0",
+      "react-scripts": "3.4.3",
+      "react-stripe-elements": "^6.1.2",
+      "semantic-ui-react": "^2.0.1"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "eslint-config-airbnb": "^18.2.1",
+      "eslint-plugin-import": "^2.22.1",
+      "eslint-plugin-jsx-a11y": "^6.4.1",
+      "eslint-plugin-react": "^7.21.5",
+      "eslint-plugin-react-hooks": "^4.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
