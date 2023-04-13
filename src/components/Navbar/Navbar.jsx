@@ -43,9 +43,12 @@ const PrimarySearchAppBar = ({ totalItems }) => {
        
       </nav>
         <Toolbar>
+       <div style={{display:"flex"}}>
+       <img src={logo} alt="commerce.js" height="30px" color='black' className={classes.image} /> 
           <Typography component={Link} to="/products" variant="h6" className={classes.title} color="inherit">
-            <img src={logo} alt="commerce.js" height="30px" color='black' className={classes.image} /> e-shop
+            e-shop
           </Typography>
+       </div>
          
           <div className={classes.grow} />
           {location.pathname === '/products' && (

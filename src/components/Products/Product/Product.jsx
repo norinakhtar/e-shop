@@ -6,14 +6,14 @@ import useStyles from './styles';
 
 const Product = ({ product, onAddToCart }) => {
   const classes = useStyles();
-  console.log(product);
+  // console.log(product);
 
-  const handleAddToCart = () => onAddToCart(product.id, 1);
+  const handleAddToCart = () => {onAddToCart(product.id, 1)};
   
 
   return (
     <Card  style={{position:"relative"}}className={classes.root}>
-      <CardMedia className={classes.media} image={product.image.url}  style={{ width: '100%',objectFit: "cover" , height: '400px'}} title={product.name} />
+      <img src={product.image.url}  style={{ width: '100%',display:"block" , height: '400px'}} title={product.name} />
       <CardContent>
         <div className={classes.cardContent}>
           <Typography gutterBottom variant="h5" component="h2">
