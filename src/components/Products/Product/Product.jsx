@@ -1,21 +1,23 @@
 import React from 'react';
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } from '@material-ui/core';
-import { AddShoppingCart } from '@material-ui/icons';
+import { AddShoppingCart, Block } from '@material-ui/icons';
 
 import useStyles from './styles';
 
 const Product = ({ product, onAddToCart }) => {
   const classes = useStyles();
+  console.log(product);
 
   const handleAddToCart = () => onAddToCart(product.id, 1);
+  
 
   return (
     <Card  style={{position:"relative"}}className={classes.root}>
-      <CardMedia className={classes.media} image={product.media.source} title={product.name} />
+      <CardMedia className={classes.media} image={product.image.url}  style={{ width: '100%',objectFit: "cover" , height: '400px'}} title={product.name} />
       <CardContent>
         <div className={classes.cardContent}>
           <Typography gutterBottom variant="h5" component="h2">
-            {product.name}
+            {product.name} 
           </Typography>
           <Typography gutterBottom variant="h5" component="h2">
             ${product.price.formatted}

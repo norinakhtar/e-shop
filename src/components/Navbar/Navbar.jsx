@@ -3,7 +3,7 @@ import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '
 import { ShoppingCart, ExitToApp} from '@material-ui/icons';
 import { Link, useLocation } from 'react-router-dom';
 
-import logo from '../../assets/eshop.png';
+import logo from '../../assets/logo.png';
 import useStyles from './styles';
 // import LogoutIcon from '@material-ui/icons-material/Logout';
 
@@ -31,7 +31,7 @@ const PrimarySearchAppBar = ({ totalItems }) => {
     </Menu>
   );
 
-  //  if(location.pathname === '/') return null
+   if(location.pathname === '/') return null
   return (
     
     <>
@@ -43,8 +43,8 @@ const PrimarySearchAppBar = ({ totalItems }) => {
        
       </nav>
         <Toolbar>
-          <Typography component={Link} to="/" variant="h6" className={classes.title} color="inherit">
-            <img src={logo} alt="commerce.js" height="25px" className={classes.image} /> e-shop
+          <Typography component={Link} to="/products" variant="h6" className={classes.title} color="inherit">
+            <img src={logo} alt="commerce.js" height="30px" color='black' className={classes.image} /> e-shop
           </Typography>
          
           <div className={classes.grow} />

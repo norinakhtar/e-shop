@@ -12,7 +12,7 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
 
   const renderEmptyCart = () => (
     <Typography variant="subtitle1">You have no items in your shopping cart,
-      <Link className={classes.link} to="/">start adding some</Link>!
+      <Link className={classes.link} to="/products">start adding some</Link>!
     </Typography>
   );
 
@@ -22,7 +22,7 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
     <>
       <Grid container spacing={3}>
         {cart.line_items.map((lineItem) => (
-          <Grid item xs={12} sm={4} key={lineItem.id}>
+          <Grid item xs={14} sm={4} key={lineItem.id}>
             <CartItem item={lineItem} onUpdateCartQty={onUpdateCartQty} onRemoveFromCart={onRemoveFromCart} />
           </Grid>
         ))}

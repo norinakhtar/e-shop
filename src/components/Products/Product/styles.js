@@ -6,8 +6,9 @@ export default makeStyles(() => ({
     maxWidth: '100%',
   },
   media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
+    height: '200px', // set a fixed height for the image
+    width: '100%',
+    objectFit: 'cover',
   },
   cardActions: {
     display: 'flex',

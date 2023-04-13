@@ -25,15 +25,17 @@ const App = () => {
     const { data } = await commerce.products.list();
 
     setProducts(data);
+    
   };
 
   const fetchCart = async () => {
     setCart(await commerce.cart.retrieve());
+    console.log("fetch cart");
   };
 
   const handleAddToCart = async (productId, quantity) => {
     const item = await commerce.cart.add(productId, quantity);
-
+    console.log("onaddcart-----------");
     setCart(item.cart);
   };
 
@@ -79,6 +81,7 @@ const App = () => {
   }, []);
 
   const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
+  console.log(products,"products");
 
   return (
     <Router>
